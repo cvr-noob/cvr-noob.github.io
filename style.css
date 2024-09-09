@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(37, 37, 37);
+}
+
+div {
+    width: max-content;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:root {
+    --text-color: pink; /* Bright teal */
+    --shadow-color: lightgray; /* Vivid magenta */
+}
+
+p {
+    color: var(--text-color);
+    text-shadow: var(--shadow-color) 0 0 69px;
+    font-size: 169px;
+    animation: a69 1.3s infinite alternate;
+}
+
+@keyframes a69 {
+    0% {
+        text-shadow: var(--shadow-color) 0 0 70px;
+        transform: scale(2.5) rotate(901deg);
+    }
+    25% {
+        text-shadow: var(--shadow-color) 0 0 50px;
+        transform: scale(2.5) rotate(-901deg);
+    }
+    50% {
+        text-shadow: var(--shadow-color) 0 0 30px;
+        transform: rotate(901deg);
+    }
+    100% {
+        text-shadow: var(--shadow-color) 0 0 10px;
+        transform: rotate(-901deg);
+    }
+}
+
