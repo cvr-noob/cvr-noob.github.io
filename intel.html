@@ -324,7 +324,7 @@
                 const dynamicInput = document.getElementById('dynamicInput');
                 formData[fieldSelector.value] = dynamicInput.value;
 
-                const response = await fetch('https://cvr-intel.onrender.com/', {
+                const response = await fetch('https://marvelous-druid-fcb5f4.netlify.app/.netlify/functions/students', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
